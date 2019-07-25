@@ -9,6 +9,3 @@ These are the Netflix custom banners for the Spinnaker microservices themselves,
 # How to Install
 
 For a given app, go to the `Config` page, find the `Custom Banners` section and paste the code snippet into the text box.
-
-# Banners
-
