@@ -1,0 +1,34 @@
+<style>
+.custom-banner { height: 0 !important; }
+
+spinnaker:before {
+	content: '';
+	-webkit-mask:url("https://www.svgrepo.com/show/85491/skateboard.svg") no-repeat 50% 50%;
+	-webkit-mask-size: cover;
+	position: absolute;
+	z-index: 9999999;
+	width: 30px;
+	height: 30px;
+	left: 0;
+	bottom: 0;
+	animation: skater 35s linear infinite;
+	animation-delay: 0s;
+	background-color: gray;
+	opacity: 0.5;
+}
+
+@keyframes skater {
+ 	20% { left: 95%; }
+ 	21% { transform:rotate(-45deg) }
+ 	25% { bottom: 0; left: 95%; transform:rotate(-90deg) }
+ 	46% { bottom: 90%; left: 95%; transform:rotate(-135deg) }
+ 	50% { bottom: 95%; left: 95%; transform:rotate(-180deg); background-color: gray; }
+ 	65% { bottom: 75%; left: 95%; transform: rotate(-360deg); background-color: red; }
+ 	75% { bottom: 50%; left: 95%; transform: rotate(-720deg); background-color: yellow; }
+ 	80% { bottom: 25%; left: 95%; transform: rotate(-1080deg); background-color: blue; }
+ 	90% { bottom: 0; left: 95%; transform: rotate(-1440deg) rotateY(180deg); background-color: purple; }
+ 	91% { transform: rotateY(180deg); }
+ 	100% { left: -1000px; transform: rotateY(0); background-color: gray; }
+}
+
+</style>

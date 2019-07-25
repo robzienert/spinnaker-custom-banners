@@ -1,0 +1,259 @@
+🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦🇨🇦
+
+<style>
+.custom-banner { height: 0; }
+body { 
+  animation: pulse 10s infinite; 
+  animation-delay: 10s; 
+}
+.navbar-inverse { 
+  animation: pulse 20s infinite;
+  animation-delay: 20s;
+}
+.spinnaker-content .scrollable-columns { 
+  animation: pulse 30s infinite;
+  animation-delay: 30s;
+}
+
+@keyframes pulse {
+  0% { background-color: var(--color-alabaster); border-radius: 15px; }
+  10% { background-color: red; border-radius: 15px; }
+  20% { background-color: orange; border-radius: 5px; }
+  40% { background-color: yellow; border-radius: 10px; }
+  60% { background-color: green; border-radius: 20px;}
+  80% { background-color: blue; border-radius: 35px;}
+  90% { background-color: purple; border-radius: 55px;}
+  100% { background-color: red; border-radius: 55px;}
+}
+
+spinnaker:before {
+  content:url("https://www.svgrepo.com/show/76170/clown-fish.svg");
+position: absolute;
+z-index: 9999999;
+width: 100%;
+height: 50%;
+right: -1500px;
+transform: scale(0.2);
+animation: slidoLefto 30s infinite;
+animation-delay: 12s;
+top: -500px;
+}
+
+body:before {
+  content:url("https://www.svgrepo.com/show/275524/pirate-ship.svg");
+position: fixed;
+z-index: 9999999;
+width: 100px;
+height: 100px;
+left: 0;
+bottom: 0;
+animation: wave 30s linear infinite;
+animation-delay: 0s;
+}
+
+@keyframes wave {
+  0% {  
+    bottom: 0px;
+    left: -100px;
+  }
+  5% {  
+    bottom: 25px;
+    left: 5%;
+  }
+  10% {  
+    bottom: 75px;
+    left: 10%;
+  }
+  15% {  
+    bottom: 25px;
+    left: 15%;
+  }
+  20% {  
+    bottom: 0px;
+    left: 20%;
+  }
+  25% {  
+    bottom: 25px;
+    left: 25%;
+  }
+  30% {  
+    bottom: 75px;
+    left: 30%;
+  }
+  35% {  
+    bottom: 25px;
+    left: 35%;
+  }
+  40% {  
+    bottom: 0px;
+    left: 40%;
+  }
+  45% {  
+    bottom: 25px;
+    left: 45%;
+  }
+  50% {  
+    bottom: 75px;
+    left: 50%;
+  }
+  55% {  
+    bottom: 25px;
+    left: 55%;
+  }
+  60% {  
+    bottom: 0px;
+    left: 60%;
+  }
+  65% {  
+    bottom: 25px;
+    left: 65%;
+  }
+  70% {  
+    bottom: 75px;
+    left: 70%;
+  }
+  75% {  
+    bottom: 25px;
+    left: 75%;
+  }
+  80% {  
+    bottom: 0px;
+    left: 80%;
+  }
+  85% {  
+    bottom: 25px;
+    left: 85%;
+  }
+  90% {  
+    bottom: 75px;
+    left: 90%;
+  }
+  95% {  
+    bottom: 25px;
+    left: 95%;
+  }
+  100% {
+    bottom: 0px;
+    left: 120%;
+  }
+}
+
+@keyframes slidoLefto {
+  10% { right: -200px; top: -200px; }
+  20% { right: 0px; top: 0; }
+  30% { right: 300px; top: -300px; }
+  40% { right: 500px; top: 50px; transform:rotateY(0deg) scale(0.2); }
+  50% { right: 770px; top: 220px; transform:rotateY(180deg) scale(0.2); }
+  60% { right: 1300px; top: 0px;}
+  70% { right: 1400px; top: -200px; }
+  80% { right: 1440px; top: -300px; }
+  90% { right: 1500px; top: -500px; }
+  100% { right: 1700px; top: -800px; }
+}
+
+.nav-item.active {
+  animation: flippy 4s ease-in infinite;
+  animation-delay: 15s;
+}
+.nav-item.active:after {
+  animation: spinno 2s ease-in infinite;
+  animation-delay: 5s;
+}
+
+.clickable-row:hover {
+  animation: blurro 2s infinite;
+}
+
+@keyframes blurro {
+ 0% { filter: blur(0); }
+ 100% { filter: blur(12px); }
+}
+
+@keyframes flippy {
+    75% {  transform:rotateY(0deg) }
+    100% { transform:rotateY(360deg) }
+}
+
+@keyframes spinno {
+    75% {  transform:rotate(0deg); }
+    100% { transform:rotate(360deg); }  
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bouncy {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 200px;
+  }
+  100% {
+    margin-top: -100px;
+  } 
+}
+
+@keyframes rocker {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rollup-entry:nth-of-type(even) .sticky-header, page-section:nth-of-type(even) .sticky-header {
+  animation: rocker 15s infinite;
+  animation-delay: 20s;
+}
+.rollup-entry:nth-of-type(odd) .sticky-header, page-section:nth-of-type(odd) .sticky-header {
+  animation: rocker 28s infinite;
+  animation-delay: s;
+}
+
+.custom-banner p {
+  animation: bouncy 3s infinite;
+  text-align: left;
+  display: inline-block;
+}
+
+  .second-level-navigation-header {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    animation: gradient 15s infinite;
+    animation-delay: 5s;
+    background-size: 400% 400%;
+  }
+
+.application-name:before { display: block; content: '🇨🇦🇨🇦🇨🇦'} .application-name { display: none; }
+.account-tag { display: none; }
+.account-tag:before { content: '🇨🇦🇨🇦'; color: purple; display: block; }
+
+ui-view[name="insight"] {
+  background-color: #33000a;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+}
+
+insight-filter * {
+  font-family: "Comic Sans MS", cursive;
+}
+
+</style>
