@@ -4,7 +4,7 @@
 At Netflix, we've used this feature for easter eggs and just making life a little more fun.
 These are the Netflix custom banners for the Spinnaker microservices themselves, which you can feel free to copy into your own installation.
 
-![A little example](custom-banners.gif)
+![A little example](preview.gif)
 
 # How to Install
 
